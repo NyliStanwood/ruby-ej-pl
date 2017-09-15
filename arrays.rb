@@ -13,6 +13,20 @@ a = Array(1...10)
 # # => [1, 2, 3, 4, 5, 6, 7, 8, 9]
 a = [2,4,6,8,0]
 # # => [2, 4, 6, 8, 0]
+a = Array(5..8)
+
+puts "EACH"
+a.each { |i| puts "This is value #{i}" }
+
+puts "EACH INDEX"
+a.each_index { |i| puts "This is index #{i}" }
+
+puts "EACH WITH INDEX"
+a.each_with_index { |val, idx| puts "INDEX: #{idx}. VALUE: #{val}" }
+
+
+
+a = [2,4,6,8,0]
 a.push(123)
 # # => [2, 4, 6, 8, 0, 123]
 a << 123
